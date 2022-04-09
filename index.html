@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>2D Editor</title>
+</head>
+<body>
+    <div id="toolbar-container">
+        <ul id="toolbar">
+            <li><img src="./icons/tool_cursor.png"></li>
+            <li><img onclick="mark()" id="marker" src="./icons/marker.png"></li>
+            <li><img onclick="drawline()" id="line" src="./icons/line.png"></li>
+            <li><img onclick="drawSq()" id="sq" src="./icons/sq.png"></li>
+            <li><img onclick="drawcircle()" id="circ" src="./icons/circ.png"></li>
+            <li><img onclick="drawtriangle()" id="tria" src="./icons/tria.png"></li>
+            <li><img onclick="drawRect()" id="rect" src="./icons/rect.png"></li>
+            <li><img onclick="drawPoly()" id="poly" src="./icons/poly.png"></li>
+            <li><img onclick="drawellipse()"id="ellip" src="./icons/ellip.png"></li>
+            <li><img onclick="drawarc()" id="curve" src="./icons/curve.png"></li>
+            <li><img id="polyline" src="./icons/polyline.png"></li>
+            <li><img onclick="clearcanvas()" id="clearcanvas" src = "./icons/clear.png" ></li>
+        </ul>
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <button onclick="cUndo()" id="undo" style="float: right;"> Undo </button>
+        <button id="redo"> Redo </button>
+        <a id="saveas" onclick = "savecan()" id="save"> Save As</a>
+        <script src="canvas.js"> </script>
+        <script src="reimg.js"> </script>
+    </div>
+    
+    
+</body>
+</html>
